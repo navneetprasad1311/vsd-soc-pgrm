@@ -17,25 +17,45 @@ Memory: 7669MiB
 
 ## Yosys Installation:
 
+Download the oss-cad-suite-linux-x64-20250916.tar file from releases page of OSS-CAD-Suite repository \
+It contains most of the Open-source tools for ASIC design with the latest updates, including *Yosys*, which we require.
+
+Currently, this is the only effective way to install Yosys, suggested by the contributors themselves. \
+Github Link: https://github.com/YosysHQ/oss-cad-suite-build#installation
+
+The following commands are used to completely install Yosys (along with the tools in OSS-CAD-Suite)
+
 ```bash
-git clone https://github.com/YosysHQ/yosys.git
-cd yosys 
-sudo apt install make 
-sudo apt-get install build-essential clang bison flex \
-    libreadline-dev gawk tcl-dev libffi-dev git \
-    graphviz xdot pkg-config python3 libboost-system-dev \
-    libboost-python-dev libboost-filesystem-dev zlib1g-dev
-make 
-sudo make install
+cd ~/Downloads //The place the tar file is downloaded
+tar -xvzf oss-cad-suite-linux-x64-20250916.tgz -C ~/Documents/Apps
 ```
+I'll be storing it in `/Documents/Apps` folder, you may change it as per your liking 
+
+```bash
+vim ~/.bashrc //you may use gedit instead of vim
+export PATH="$HOME/Documents/Apps/oss-cad-suite/bin:$PATH" //in the end of the file
+```
+then,
+
+```bash
+source ~/.bashrc
+```
+and with that Yosys installation is successfully done ✔️
+
 
 Tool Check:
 
-<img width="774" height="626" alt="Yosys" src="https://github.com/user-attachments/assets/004d1f6e-e1a5-4319-8ad5-10009335cacf" />
+<img width="750" height="752" alt="Yosys" src="https://github.com/user-attachments/assets/0dbf43e4-5811-4fb0-a052-7bd51e7a7f5e" />
 
 
 
 ## Iverilog Installation:
+
+Iverilog comes bundled with the OSS-CAD Suite, but the problem is, it comes with the latest version of 13 which isn't regarded as stable in Iverilog's documentation \
+Thus, we have to manually revert back to a stable version. \
+This is done by deleting all iverilog files that came bundled with OSS-CAD Suite (using the search function might be helpful) 
+
+Then use the below script to install version 11 of iverilog.
 
 ```bash
 sudo apt-get install iverilog
@@ -48,15 +68,21 @@ Tool Check:
 
 ## GTKWave Installation:
 
+GTKWave too comes bundled with OSS-CAD Suite, but this time with the version 3.4.0 which is stable. \
+But just to be on the safer side it is recommended to delete the GTKWave files inside the OSS-CAD Suite folder \
+and directly install GTKWave from the terminal using the following command 
+
 ```bash
-sudo apt update
 sudo apt install gtkwave
 ```
 
+This installs version 3.3.104 currently.
+
+
 Tech Check:
 
-<img width="750" height="266" alt="GTKWave" src="https://github.com/user-attachments/assets/2ec7fdc6-54d8-4812-ac74-ce7ecb6bece3" />
-<img width="1020" height="654" alt="GTKWaveWindow" src="https://github.com/user-attachments/assets/4b172af1-5a03-4b11-ab22-17a3a0ec9df9" />
+<img width="1007" height="636" alt="GTKWave" src="https://github.com/user-attachments/assets/ccec1605-3b1f-4ef6-a1ca-53ea3d1eb70a" />
+
 
 
 
