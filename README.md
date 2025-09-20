@@ -1,7 +1,7 @@
 # *Week 0* VSD RISC-V Tapeout Program ![Tool Installation Status](https://img.shields.io/badge/Installation_of_Tools-Done-green)
 
 This document describes the setup and verification of the required tools for the VSD RISC-V Tapeout program, \
-keeping it Professional Informative Simple and Sweet (please don't make an acronym out of this!)
+keeping it Professional Informative Simple and Sweet  (please don't make an acronym out of this!)
 
 ## Table of Contents
 
@@ -147,8 +147,3 @@ gtkwave
 - Ensure OSS-CAD Suite versions of Iverilog and GTKWave are removed before installing.
 - If a command is not found, check that PATH was correctly updated and run `source ~/.bashrc`.
 - GTKWave version may differ if installed via OSS-CAD Suite vs `apt`.
-
-
-
-
-
