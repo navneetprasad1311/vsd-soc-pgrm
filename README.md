@@ -1,19 +1,19 @@
 # *Week 0* VSD RISC-V Tapeout Program ![Tool Installation Status](https://img.shields.io/badge/Installation_of_Tools-Done-green)
 
 This document describes the setup and verification of the required tools for the VSD RISC-V Tapeout program, \
-keeping it Professional Intuitive Simple and Sweet (don't abbreviate this please)
+keeping it Professional Informative Simple and Sweet (please don't make an acronym out of this!)
 
 ## Table of Contents
 
 1. [System Information](#system-information)
-2. [Yosys Installation](#yosys-installation)
+2. [Yosys](#yosys-installation)
    - [Installation of Yosys](#installation)
    - [Tool Check](#tool-check)
-3. [Iverilog Installation](#iverilog-installation)
-   - [Installation of iverilog](#installation-1)
+3. [Iverilog](#iverilog-installation)
+   - [Installation of Iverilog](#installation-1)
    - [Tool Check](#tool-check-1)
-4. [GTKWave Installation](#gtkwave-installation)
-   - [Installation GTKWave](#installation-2)
+4. [GTKWave](#gtkwave-installation)
+   - [Installation of GTKWave](#installation-2)
    - [Tool Check](#tool-check-2)
 
 ---
@@ -41,11 +41,11 @@ Download the `oss-cad-suite-linux-x64-20250916.tgz` file from releases page of [
 It contains most of the Open-source tools for ASIC design with the latest updates, including *Yosys*, which we require.
 
 Currently, this is the only effective way to install Yosys, suggested by the contributors themselves. \
-Installation guide if you want to check it out yourself: https://github.com/YosysHQ/oss-cad-suite-build#installation
+Installation guide for your reference: https://github.com/YosysHQ/oss-cad-suite-build#installation
 
 ### Installation:
 
-The following commands are used to completely install Yosys (along with the tools in OSS-CAD-Suite)
+The following commands are used to completely install Yosys (along with the other tools in OSS-CAD-Suite)
 
 ```bash
 cd ~/Downloads 
@@ -60,7 +60,7 @@ vim ~/.bashrc
 ```
 ```bash
 export PATH="$HOME/Documents/Apps/oss-cad-suite/bin:$PATH" 
-# At the end of the file
+# At the end of the file that opened
 ```
 then,
 
@@ -132,13 +132,13 @@ gtkwave
 
 ---
 
-## Summary
+## Tool Summary
 
-| Tool     | Command              | Installed Version |
-|----------|--------------------|-----------------|
-| Yosys    | `yosys -V`          | 0.57    |
-| Iverilog | `iverilog -V`       | 11               |
-| GTKWave  | `gtkwave -V` | 3.3.104          |
+| Tool     | Command              | Installed Version | Working |
+|----------|--------------------|-----------------|------|
+| Yosys    | `yosys -V`          | 0.57    | ☑️ |
+| Iverilog | `iverilog -V`       | 11               | ☑️ |
+| GTKWave  | `gtkwave -V` | 3.3.104          | ☑️ |
 
 ---
 
