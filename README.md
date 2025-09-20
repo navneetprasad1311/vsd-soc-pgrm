@@ -83,9 +83,9 @@ license
 
 ## Iverilog Installation:
 
-Iverilog comes bundled with the OSS-CAD Suite, but the problem is, it comes with the latest version of 13 which isn't regarded as stable in Iverilog's documentation \
+Iverilog comes bundled with the OSS-CAD Suite, but the problem is, it comes with the latest version 13 which isn't regarded as a stable version in Iverilog's documentation \
 Thus, we have to manually revert back to a stable version. \
-This is done by deleting all iverilog files that came bundled with OSS-CAD Suite (using the search function might be helpful) 
+This is done by __deleting all iverilog files that came bundled with OSS-CAD Suite__ (using the search function might be helpful) 
 
 ### Installation:
 
@@ -109,7 +109,7 @@ iverilog -V
 ## GTKWave Installation:
 
 GTKWave too comes bundled with OSS-CAD Suite, but this time with the version 3.4.0 which is stable. \
-But just to be on the safer side it is recommended to delete the GTKWave files inside the OSS-CAD Suite folder
+But just to be on the safer side it is __recommended to delete__ the GTKWave files inside the OSS-CAD Suite folder
 
 ### Installation:
 
