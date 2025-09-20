@@ -58,6 +58,7 @@ This is done by deleting all iverilog files that came bundled with OSS-CAD Suite
 Then use the below script to install version 11 of iverilog.
 
 ```bash
+sudo apt update
 sudo apt-get install iverilog
 ```
 
@@ -73,6 +74,7 @@ But just to be on the safer side it is recommended to delete the GTKWave files i
 and directly install GTKWave from the terminal using the following command 
 
 ```bash
+sudo apt update
 sudo apt install gtkwave
 ```
 
