@@ -109,7 +109,7 @@ iverilog -V
 ## GTKWave Installation:
 
 GTKWave too comes bundled with OSS-CAD Suite, but this time with the version 3.4.0 which is stable. \
-But just to be on the safer side it is recommended to delete the GTKWave files inside the OSS-CAD Suite folder \
+But just to be on the safer side it is recommended to delete the GTKWave files inside the OSS-CAD Suite folder
 
 ### Installation:
 
